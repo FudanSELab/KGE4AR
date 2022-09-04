@@ -1,7 +1,6 @@
 # kge4am.github.io
 ## Our project
-1. [KG4APIMigration github](https://github.com/FudanSELab/KG4APIMigration) , gitHub address of our project
-2. [KG4APIMigration compress file](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration.zip) , compressed file of our project 
+1. [KG4APIMigration compress file](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration.zip) , compressed file of our project 
 
 ## Our data
 1. [tse19A](https://github.com/kge4am/kge4am.github.io/blob/main/TSE19MethodMigrationA.txt), tse's dataset
