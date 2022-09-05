@@ -1,0 +1,37 @@
+[
+    {
+        "mrr": 0.1579684159378037,
+        "rank": 8.779591836734694,
+        "hit": 0.3040816326530612,
+        "hit_num": 149.0,
+        "rank_count": {
+            "rank_1": 40,
+            "rank_2": 28,
+            "rank_3": 20,
+            "rank_4": 12,
+            "rank_5": 12,
+            "rank_6": 12,
+            "rank_7": 8,
+            "rank_8": 1,
+            "rank_9": 9,
+            "rank_10": 7
+        },
+        "top_n_hit": {
+            "1": 0.08163265306122448,
+            "3": 0.17959183673469387,
+            "5": 0.22857142857142856,
+            "10": 0.3040816326530612
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "model": 1
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rapim_rerank_method_filter_model"
+            }
+        ]
+    }
+]

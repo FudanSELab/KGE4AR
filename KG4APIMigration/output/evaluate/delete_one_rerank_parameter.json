@@ -1,0 +1,330 @@
+[
+    {
+        "mrr": 0.3841409622059823,
+        "rank": 26.242857142857144,
+        "hit": 0.5938775510204082,
+        "hit_num": 291.0,
+        "rank_count": {
+            "rank_1": 131,
+            "rank_2": 58,
+            "rank_3": 31,
+            "rank_4": 24,
+            "rank_5": 14,
+            "rank_6": 11,
+            "rank_7": 4,
+            "rank_8": 4,
+            "rank_9": 7,
+            "rank_10": 7
+        },
+        "top_n_hit": {
+            "1": 0.2673469387755102,
+            "3": 0.4489795918367347,
+            "5": 0.5265306122448979,
+            "10": 0.5938775510204082
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.381655560419503,
+        "rank": 26.316326530612244,
+        "hit": 0.5897959183673469,
+        "hit_num": 289.0,
+        "rank_count": {
+            "rank_1": 129,
+            "rank_2": 59,
+            "rank_3": 32,
+            "rank_4": 25,
+            "rank_5": 11,
+            "rank_6": 14,
+            "rank_7": 2,
+            "rank_8": 5,
+            "rank_9": 7,
+            "rank_10": 5
+        },
+        "top_n_hit": {
+            "1": 0.26326530612244897,
+            "3": 0.4489795918367347,
+            "5": 0.5224489795918368,
+            "10": 0.5897959183673469
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.3702321732434529,
+        "rank": 25.875510204081632,
+        "hit": 0.5918367346938775,
+        "hit_num": 290.0,
+        "rank_count": {
+            "rank_1": 123,
+            "rank_2": 58,
+            "rank_3": 33,
+            "rank_4": 22,
+            "rank_5": 14,
+            "rank_6": 11,
+            "rank_7": 11,
+            "rank_8": 3,
+            "rank_9": 9,
+            "rank_10": 6
+        },
+        "top_n_hit": {
+            "1": 0.2510204081632653,
+            "3": 0.43673469387755104,
+            "5": 0.5102040816326531,
+            "10": 0.5918367346938775
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.3831396366444609,
+        "rank": 26.26326530612245,
+        "hit": 0.5918367346938775,
+        "hit_num": 290.0,
+        "rank_count": {
+            "rank_1": 133,
+            "rank_2": 50,
+            "rank_3": 36,
+            "rank_4": 21,
+            "rank_5": 15,
+            "rank_6": 12,
+            "rank_7": 5,
+            "rank_8": 5,
+            "rank_9": 6,
+            "rank_10": 7
+        },
+        "top_n_hit": {
+            "1": 0.2714285714285714,
+            "3": 0.44693877551020406,
+            "5": 0.5204081632653061,
+            "10": 0.5918367346938775
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.3401437261044882,
+        "rank": 27.84285714285714,
+        "hit": 0.573469387755102,
+        "hit_num": 281.0,
+        "rank_count": {
+            "rank_1": 112,
+            "rank_2": 45,
+            "rank_3": 34,
+            "rank_4": 22,
+            "rank_5": 15,
+            "rank_6": 10,
+            "rank_7": 13,
+            "rank_8": 17,
+            "rank_9": 7,
+            "rank_10": 6
+        },
+        "top_n_hit": {
+            "1": 0.22857142857142856,
+            "3": 0.38979591836734695,
+            "5": 0.46530612244897956,
+            "10": 0.573469387755102
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.29695940589723874,
+        "rank": 32.891836734693875,
+        "hit": 0.5020408163265306,
+        "hit_num": 246.0,
+        "rank_count": {
+            "rank_1": 95,
+            "rank_2": 43,
+            "rank_3": 30,
+            "rank_4": 20,
+            "rank_5": 13,
+            "rank_6": 11,
+            "rank_7": 10,
+            "rank_8": 9,
+            "rank_9": 7,
+            "rank_10": 8
+        },
+        "top_n_hit": {
+            "1": 0.19387755102040816,
+            "3": 0.34285714285714286,
+            "5": 0.41020408163265304,
+            "10": 0.5020408163265306
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.38487369780940767,
+        "rank": 27.038775510204083,
+        "hit": 0.5775510204081633,
+        "hit_num": 283.0,
+        "rank_count": {
+            "rank_1": 134,
+            "rank_2": 55,
+            "rank_3": 30,
+            "rank_4": 21,
+            "rank_5": 18,
+            "rank_6": 8,
+            "rank_7": 3,
+            "rank_8": 5,
+            "rank_9": 6,
+            "rank_10": 3
+        },
+        "top_n_hit": {
+            "1": 0.27346938775510204,
+            "3": 0.44693877551020406,
+            "5": 0.5265306122448979,
+            "10": 0.5775510204081633
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    },
+    {
+        "mrr": 0.38109771917720864,
+        "rank": 26.52857142857143,
+        "hit": 0.5795918367346938,
+        "hit_num": 284.0,
+        "rank_count": {
+            "rank_1": 130,
+            "rank_2": 56,
+            "rank_3": 35,
+            "rank_4": 21,
+            "rank_5": 16,
+            "rank_6": 7,
+            "rank_7": 7,
+            "rank_8": 3,
+            "rank_9": 5,
+            "rank_10": 4
+        },
+        "top_n_hit": {
+            "1": 0.2653061224489796,
+            "3": 0.45102040816326533,
+            "5": 0.5265306122448979,
+            "10": 0.5795918367346938
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    }
+]

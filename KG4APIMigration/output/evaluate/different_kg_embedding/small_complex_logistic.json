@@ -1,0 +1,37 @@
+[
+    {
+        "mrr": 0.29332076524241973,
+        "rank": 42.76481481481481,
+        "hit": 0.524074074074074,
+        "hit_num": 283.0,
+        "rank_count": {
+            "rank_1": 99,
+            "rank_2": 45,
+            "rank_3": 31,
+            "rank_4": 32,
+            "rank_5": 21,
+            "rank_6": 15,
+            "rank_7": 11,
+            "rank_8": 11,
+            "rank_9": 8,
+            "rank_10": 10
+        },
+        "top_n_hit": {
+            "1": 0.18333333333333332,
+            "3": 0.32407407407407407,
+            "5": 0.4222222222222222,
+            "10": 0.524074074074074
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 540,
+                "name2weight": {
+                    "method->method": 1
+                },
+                "type": "retrieve",
+                "msimcol_name": "test_complex_logistic_single_retrieve_method_filter_model"
+            }
+        ]
+    }
+]

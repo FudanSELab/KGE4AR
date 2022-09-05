@@ -1,0 +1,14 @@
+numpy==1.22.3
+pandas==1.4.2
+py2neo==2021.2.3
+pymilvus==1.1.2
+sklearn
+kgdt==0.4.7
+torch==1.12.0
+nltk==3.7
+torch==1.12.0
+gensim==4.2.0
+nltk==3.7
+elasticsearch==7.16.2
+spacy==3.0.7
+en_core_web_sm-3.0.0.tar.gz

@@ -1,0 +1,37 @@
+[
+    {
+        "mrr": 0.26130042112082928,
+        "rank": 7.689795918367347,
+        "hit": 0.4204081632653061,
+        "hit_num": 206.0,
+        "rank_count": {
+            "rank_1": 88,
+            "rank_2": 31,
+            "rank_3": 17,
+            "rank_4": 15,
+            "rank_5": 17,
+            "rank_6": 8,
+            "rank_7": 11,
+            "rank_8": 5,
+            "rank_9": 7,
+            "rank_10": 7
+        },
+        "top_n_hit": {
+            "1": 0.17959183673469387,
+            "3": 0.27755102040816326,
+            "5": 0.34285714285714286,
+            "10": 0.4204081632653061
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "model": 1
+                },
+                "type": "rerank",
+                "msimcol_name": "big_d2apimap_rerank_method_filter_model"
+            }
+        ]
+    }
+]

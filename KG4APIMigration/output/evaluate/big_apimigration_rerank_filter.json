@@ -1,0 +1,43 @@
+[
+    {
+        "mrr": 0.38352218982831226,
+        "rank": 6.0285714285714285,
+        "hit": 0.5938775510204082,
+        "hit_num": 291.0,
+        "rank_count": {
+            "rank_1": 131,
+            "rank_2": 58,
+            "rank_3": 31,
+            "rank_4": 24,
+            "rank_5": 14,
+            "rank_6": 11,
+            "rank_7": 4,
+            "rank_8": 4,
+            "rank_9": 7,
+            "rank_10": 7
+        },
+        "top_n_hit": {
+            "1": 0.2673469387755102,
+            "3": 0.4489795918367347,
+            "5": 0.5265306122448979,
+            "10": 0.5938775510204082
+        },
+        "top_n": 10,
+        "details": [
+            {
+                "query_num": 490,
+                "name2weight": {
+                    "method->method": 0.05,
+                    "return value type concepts of method->return value type concepts of method": 0.05,
+                    "functionalities of method->functionalities of method": 0.95,
+                    "class concepts of method->class concepts of method": 0.8,
+                    "parameter concepts of method->parameter concepts of method": 0.05,
+                    "parameter type concepts of method->parameter type concepts of method": 0.25,
+                    "neighbor concepts of method->neighbor concepts of method": 0.95
+                },
+                "type": "rerank",
+                "msimcol_name": "big_rerank_method_filter_model"
+            }
+        ]
+    }
+]
