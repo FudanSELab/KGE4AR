@@ -22,7 +22,7 @@ The code of our project is divided into two parts, the knowledge graph construct
 ### RQ1
 1. [KGE4AM-Ret](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_retrieve_filter.json), performance on KGE4AM-Ret with given target libraries.
 2. [KGE4AM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_rerank_filter.json), performance on KGE4AM with given target libraries.
-3. [ApiMigrationScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_temp_data_for_method.py), the script of KGE4AM with given target libraries.
+3. [KGE4AMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_temp_data_for_method.py), the script of KGE4AM with given target libraries.
 4. [RAPIM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_rapim_filter.json), performance on RAPIM with given target libraries.
 5. [RAPIMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/rapim/generate_temp_data_for_rapim_method.py), the script of RAPIM with given target libraries.
 6. [D2APIMap](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_d2apimap_filter.json), performance on D2APIMap with given target libraries.
@@ -39,4 +39,4 @@ The code of our project is divided into two parts, the knowledge graph construct
 3. [DiffKGEmbeddingVector](todo), vector on different method knowledge graph embedding models.
 4. [DiffKnowledgePerformance](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the performance of different knowledge types. 
 5. [DiffKnowledgeTypeScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/generate_single_parameter_temp_data_for_method.py), the script of different knowledge types. 
-6. [ContributionOfDiffSimilarity](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the contribution of different similarity in the rerank step.
+6. [ContributionOfDiffSimilarity](https://gsithub.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the contribution of different similarity in the rerank step.
