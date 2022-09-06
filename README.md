@@ -29,11 +29,11 @@ The code of our project is divided into two parts, the knowledge graph construct
 7. [D2APIMapScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/d2apimap/generate_temp_data_for_d2apimap_method.py), the script of D2APIMap with given target libraries.
 
 ### RQ2
-1. [KGE4AM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_kge4am_method_10.json), sample data on KGE4AM without given target libraries.
-2. [BM25](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_bm25_method_10.json), sample data on BM25 without given target libraries.
-3. [BM25+RAPIM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_rapim_method_10.json), sample data on BM25+RAPIM without given target libraries.
-4. [BM25+D2APIMap](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_d2apimap_method_10.json), sample data on BM25+D2APIMap without given target libraries.
-5. [FinalMarkResult](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_final_mark.csv), mark result between KGE4AM and baselines without given target libraries. 
+1. [KGE4AMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_kge4am_method_10.json), sample data on KGE4AM without given target libraries.
+2. [BM25SampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_bm25_method_10.json), sample data on BM25 without given target libraries.
+3. [BM25+RAPIMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_rapim_method_10.json), sample data on BM25+RAPIM without given target libraries.
+4. [BM25+D2APIMapSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_d2apimap_method_10.json), sample data on BM25+D2APIMap without given target libraries.
+5. [SampleDataFinalMarkResult](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_final_mark.csv), mark result between KGE4AM and baselines without given target libraries. 
 
 ### RQ3
 1. [DiffKGEmbeddingScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_single_parameter_temp_data_for_method.py), the script of different knowledge graph embedding models.
