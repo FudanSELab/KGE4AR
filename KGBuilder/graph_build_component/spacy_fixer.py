@@ -3,9 +3,7 @@ from spacy.tokens.doc import Doc
 
 from script.word_util import WordUtil
 
-"""
-spacy相关的工具类
-"""
+
 
 
 class SoftwareTextPOSFixer:
@@ -36,7 +34,7 @@ class SoftwareTextPOSFixer:
                 retokenizer.merge(doc[0:1], attrs=attrs)
             return doc
 
-        # todo: 考虑动词被动？
+
         if WordUtil.couldBeVerb(doc[0].text) and doc[0].pos_ == "ADV":
             lemma = SoftwareTextPOSFixer.lemmatizer.lemmatize(first_token.text, "v")
             if lemma == first_token.text.lower():
@@ -50,7 +48,7 @@ class SoftwareTextPOSFixer:
                 retokenizer.merge(doc[0:1], attrs=attrs)
             return doc
 
-        # 被动形式
+
         # if WordUtil.couldBeVerb(doc[0].text) and doc[0].tag_ == "VBD":
         #     lemma = SoftwareTextPOSFixer.lemmatizer.lemmatize(first_token.text, "v")
         #     if lemma == first_token.text.lower():

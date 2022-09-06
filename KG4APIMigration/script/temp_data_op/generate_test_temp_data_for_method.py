@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/07/22
-------------------------------------------
-@Modify: 2022/07/22
-------------------------------------------
-@Description:
-"""
 import os
 import threading
 import time
@@ -40,7 +30,7 @@ def create_method_pipeline(milvus, neo4j_util, library2methods, milvus_util):
     migration = APIMigration(neo4j_util, library2methods, milvus_util, big_or_small, vector_type)
     migration.add_calculator(calculator=factory.method2method_milvus_sim(),
                              name="method->method")
-    # 添加rerank模块
+
     migration.add_calculator(calculator=factory.class_concepts_of_method2class_concepts_of_method_milvus_sim(),
                              name="class concepts of method->class concepts of method",
                              stage=APIMigration.STAGE_RERANK)
@@ -128,7 +118,6 @@ def merge(thread_num):
 
 if __name__ == '__main__':
     time1 = time.time()
-    # 加载数据
     # csv_path = os.path.join(DATA_DIR, 'query_data', 'sample_api_method_{}.csv'.format(type))
     # dataset = DataSet("method")
     # dataset.load_from_csv(csv_path)

@@ -18,7 +18,7 @@ class CSVImporter:
         self.translator.graphdata2csv(csv_folder=csv_folder, graph=graph_data, only_one_relation_file=False,
                                       prefix=count, node_id_value_prefix=str(count))
 
-    # 从csv获取所有node label
+
     def get_property_node_label(self, csv_file):
         return_property_map = {}
         return_labels = {}
@@ -34,7 +34,7 @@ class CSVImporter:
                 break
         return return_property_map, return_labels
 
-    # step2: 导入节点
+
     def node_csv2neo4j(self, csv_folder, lib_name, bni):
         for file in os.listdir(csv_folder):
             if file.find("$nodes$") != -1:
@@ -53,7 +53,6 @@ class CSVImporter:
                 break
         return return_relation_label
 
-    # step3: 导入关系
     def relation_csv2neo4j(self, csv_folder, lib_name, bni, count):
 
         for file in os.listdir(csv_folder):

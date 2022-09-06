@@ -7,9 +7,7 @@ from migration.evaluate.dataset import DataSet
 
 
 class SimEvaluator:
-    """
-    进行实验评估的方法
-    """
+
     def __init__(self, top_n=100):
         self.eval_result = {}
         self.top_n = top_n

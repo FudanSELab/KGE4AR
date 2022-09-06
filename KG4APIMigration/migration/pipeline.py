@@ -11,9 +11,7 @@ from migration.converter.filter import NodeFilter
 class APIMigration:
     DEFAULT_RETRIEVAL_TOP_NUM = 1000
     DEFAULT_RERANK_TOP_NUM = 100
-    # 目前计划分成两个阶段：retrieval + rerank，
-    # retrieval ：前者负责筛选出相关的候选，简单相似度计算，多路召回
-    # rerank ： 一对一相似度，更加精细的相似度计算与重排，比如在类级别算相似度
+
     STAGE_RETRIEVAL = "retrieval"
     STAGE_RERANK = "rerank"
 
@@ -61,7 +59,7 @@ class APIMigration:
 
     def retrieval(self, start_api_id, top_n=DEFAULT_RETRIEVAL_TOP_NUM, is_filter=True, target_api_id=None) -> CombineSimResultCollection:
         """
-        按照
+
         :param start_api_id:
         :param top_n:
         :param is_filter:
@@ -126,13 +124,7 @@ class APIMigration:
 
     def rerank(self, start_api_id, combine_sim_result_collection: CombineSimResultCollection,
                top_n=DEFAULT_RERANK_TOP_NUM) -> CombineSimResultCollection:
-        """
-        按照上一步给定的结合各种相似度的结果，进行更加精细的计算，重排，主要都是一些点对点相似度
-        :param combine_sim_result_collection: 上一步计算的各种相似度的缓存
-        :param start_api_id:
-        :param top_n: 只选择上一步的结果的多少进行重排
-        :return:
-        """
+
         rerank_combine_sim_collection = CombineSimResultCollection(start_id=start_api_id)
         combined_results = combine_sim_result_collection.get_combine_sim_result()
         rerank_combine_sim_collection.update(combine_sim_result_collection)
@@ -158,12 +150,7 @@ class APIMigration:
             return_retrieval_result=False,
             is_complete=True,
             target_api_id=None):
-        """
-        对整个流水线，retrieval+rerank都跑一次
-        :param return_retrieval_result, 是否将中间的retrieval的结果返回
-        :param is_complete 是否将第一步retrieval的结果进行补全
-        :return:
-        """
+
 
         retrieval_combine_sim_collection = self.retrieval(start_api_id=start_api_id, top_n=retrieval_top_n,
                                                           is_filter=is_filter, target_api_id=target_api_id)

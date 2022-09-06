@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/06/15
-------------------------------------------
-@Modify: 2022/06/15
-------------------------------------------
-@Description:
-"""
 from milvus import Milvus, MetricType, IndexType
 from py2neo import Graph
 

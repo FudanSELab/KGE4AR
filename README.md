@@ -11,12 +11,12 @@ The code of our project is divided into two parts, the knowledge graph construct
 
 ### Knowledge graph
 1. [libraries.io](https://zenodo.org/record/3626071/files/libraries-1.6.0-2020-01-12.tar.gz), the download address of the original data set we built the knowledge graph.
-2. [BigKGData](todo), data directory of big knowledge graph.
-3. [BigKGEmbedding](todo), embedding directory of big knowledge graph.
+2. [BigKGData](https://zenodo.org/record/7052635/files/big_kg_data.7z?download=1), data directory of big knowledge graph.
+3. [BigKGEmbedding](todo), embedding directory of big knowledge graph, the tsv file is too big, we are now trying to upload it.
 4. [BigKGRelatedLibrary](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/query_data/BigKGRelateLibrary.csv), all libraries involved in the big knowledge graph.
-5. [MiddleKGData](todo), data directory of middle knowledge graph.
-6. [SmallKGData](todo), data directory of small knowledge graph.
-7. [SmallKGEmbedding](todo), embedding directory of small knowledge graph.
+5. [MiddleKGData](https://zenodo.org/record/7052230/files/middle_kg_data.7z?download=1), data directory of middle knowledge graph.
+6. [SmallKGData](https://zenodo.org/record/7052213/files/small_kg_data.7z?download=1), data directory of small knowledge graph.
+7. [SmallKGEmbedding](https://zenodo.org/record/7053015/files/small_kg_embedding.7z?download=1), embedding directory of small knowledge graph.
 
 ## Our result
 ### RQ1
@@ -38,7 +38,7 @@ The code of our project is divided into two parts, the knowledge graph construct
 ### RQ3
 1. [DiffKGEmbeddingScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_single_parameter_temp_data_for_method.py), the script of different knowledge graph embedding models.
 2. [DiffKGEmbeddingPerformance](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/different_kg_embedding), performance on different method knowledge graph embedding models.
-3. [DiffKGEmbeddingVector](todo), vector on different method knowledge graph embedding models.
-4. [DiffKnowledgePerformance](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the performance of different knowledge types. 
+3. [DiffKGEmbeddingVector](https://zenodo.org/record/7053035/files/different_kg_embedding.7z?download=1), vector on different method knowledge graph embedding models.
+4. [DiffKnowledgeTypePerformance](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the performance of different knowledge types. 
 5. [DiffKnowledgeTypeScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/generate_single_parameter_temp_data_for_method.py), the script of different knowledge types. 
 6. [ContributionOfDiffSimilarity](https://gsithub.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/delete_one_rerank_parameter.json), the contribution of different similarity in the rerank step.

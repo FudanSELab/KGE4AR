@@ -16,14 +16,6 @@ class Neo4jUtil:
         start_library_id = start_node_info.get("library_id", -1)
         return start_library_id
 
-    # @lru_cache(maxsize=10000)
-    # def get_library_identity_by_node_id(self, node_id):
-    #     start_node_info = self.get_node_by_id(node_id)
-    #     start_library_id = start_node_info.get("library_id", -1)
-    #     cypher = "match(l:library) where l.library_id = {} return id(n)".format(start_library_id)
-    #
-    #     return start_library_id
-
     @lru_cache(maxsize=10000)
     def get_node_by_id(self, id):
         cypher = f'MATCH (n) WHERE id(n)={id}  RETURN n'

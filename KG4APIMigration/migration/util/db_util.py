@@ -7,9 +7,7 @@ from migration.util.neo4j_util import Neo4jUtil
 
 
 class DBUtil:
-    """
-    使用单例模式来获取各个常见的需要加载的数据，保证了一个数据只会加载一次,避免浪费内存和时间
-    """
+
     __large_api_kg_neo4j_graph = None
     __milvus = None
     __test_api_kg_neo4j_graph = None

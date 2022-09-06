@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/06
-------------------------------------------
-@Modify: 2022/08/06
-------------------------------------------
-@Description:
-"""
 import re
 import nltk.stem.lancaster as lc
 from nltk import WordNetLemmatizer

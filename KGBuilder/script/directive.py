@@ -1,7 +1,5 @@
 class DirectiveEntityCategory:
-    """
-    定义不同的约束节点的类型以及相关的标签
-    """
+
     CATEGORY_DIRECTIVE_FORMULA_TREE = 29
     CATEGORY_DIRECTIVE_ATOMIC_FORMULA_TREE = 30
 
@@ -57,9 +55,7 @@ class DirectiveEntityCategory:
 
 
 class DirectiveRelationCategory:
-    """
-    定义在约束图之中，约束关系与不同API节点之间的关系
-    """
+
 
     RELATION_CATEGORY_DIRECTIVE_BELONG_TO = 20
     RELATION_CATEGORY_DIRECTIVE_RELATED_TO = 21

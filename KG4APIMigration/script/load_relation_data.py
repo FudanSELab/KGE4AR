@@ -3,7 +3,6 @@ import torch
 
 from definitions import RemoteMilvus
 from migration.util.path_util import PathUtil
-# 参考官网教程书写：https://github.com/facebookresearch/PyTorch-BigGraph/blob/26e23ee1fe4c66c14e66ac09f2e6cf5c71c8452a/docs/source/downstream_tasks.rst
 from migration.util.db_util import DBUtil
 
 

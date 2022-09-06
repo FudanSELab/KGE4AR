@@ -14,7 +14,6 @@ class PathUtil:
     @classmethod
     def combine_sim_collection(cls, name="word2vector_test"):
         """
-        获取一个指定的储存短语和帖子之间关系的缓存。
         :param cache_name:
         :return:
         """
@@ -23,7 +22,6 @@ class PathUtil:
     @classmethod
     def multi_combine_sim_collection(cls, name="word2vector_test"):
         """
-        获取一个指定的储存短语和帖子之间关系的缓存。
         :param cache_name:
         :return:
         """
@@ -32,7 +30,6 @@ class PathUtil:
     @classmethod
     def temp_multi_combine_sim_collection(cls, name="word2vector_test"):
         """
-        获取一个指定的储存短语和帖子之间关系的缓存。
         :param cache_name:
         :return:
         """
@@ -41,7 +38,6 @@ class PathUtil:
     @classmethod
     def complex_relation_file(cls, name="relation_types_parameters_apikg_test_821.tsv"):
         """
-        获取一个指定的储存短语和帖子之间关系的缓存。
         :param cache_name:
         :return:
         """
@@ -51,7 +47,6 @@ class PathUtil:
     @classmethod
     def evaluate_result(cls, name="word2vector_test"):
         """
-        获取一个指定的储存短语和帖子之间关系的缓存。
         :param cache_name:
         :return:
         """

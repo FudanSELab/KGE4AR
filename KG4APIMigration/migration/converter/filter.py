@@ -5,9 +5,6 @@ from migration.util.db_util import DBUtil
 
 
 class NodeFilter:
-    """
-    对于API迁移找到的结果其实需要做些过滤
-    """
     EXTERNAL_CLASS_LIBRARY = 100000000
 
 
@@ -76,12 +73,6 @@ class NodeFilter:
 
 
     def is_valid(self, current_node_id, filter_lib_ids):
-        """
-        判断目前节点是否应该被过滤掉
-        :param current_node_id:
-        :param filter_lib_id: 需要被过滤掉的库id
-        :return:
-        """
         current_node_id_library_id = self.neo4j_util.get_library_id_by_node_id(current_node_id)
         if current_node_id_library_id == 100000000:
             return False

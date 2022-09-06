@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/07/31
-------------------------------------------
-@Modify: 2022/07/31
-------------------------------------------
-@Description:
-"""
 import os
 
 from definitions import DATA_DIR

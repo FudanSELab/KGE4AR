@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/07/15
-------------------------------------------
-@Modify: 2022/07/15
-------------------------------------------
-@Description:
-"""
 import os
 import time
 import numpy as np
@@ -47,7 +37,6 @@ def find_optimal_result(file, beam_size=4):
 if __name__ == '__main__':
     time1 = time.time()
     beam_size = 4
-    # 加载评估器和数据
     top_n = 100
     top_n_list = [1, 3, 5, 10, 20, 30, 50, 100]
     se = SimEvaluator(top_n)

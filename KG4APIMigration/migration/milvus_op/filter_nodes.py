@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/05/14
-------------------------------------------
-@Modify: 2022/05/14
-------------------------------------------
-@Description:
-"""
 from queue import Queue
 from threading import Thread
 from py2neo import Graph

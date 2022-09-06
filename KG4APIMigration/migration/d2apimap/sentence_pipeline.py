@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/06
-------------------------------------------
-@Modify: 2022/08/06
-------------------------------------------
-@Description:
-"""
 import os
 import re
 from nltk import stem
@@ -113,10 +103,10 @@ class SentencePipeline():
         return rs_list, rt_list
 
     def text_preprocess(self, sentence):
-        sentence = self.extract_first_sentence(sentence) #得到第一句话
-        sentence = self.special_characters_cleanup(sentence)  #去除标点和数字
-        token_list = self.stop_words_removal(sentence.split()) #去除停用词
-        sentence = self.split_camel_case(token_list) # 驼峰拆分
+        sentence = self.extract_first_sentence(sentence)
+        sentence = self.special_characters_cleanup(sentence)
+        token_list = self.stop_words_removal(sentence.split())
+        sentence = self.split_camel_case(token_list)
         token_list = self.lower_token(sentence.split())
         token_list = self.lemmatization(token_list)
 

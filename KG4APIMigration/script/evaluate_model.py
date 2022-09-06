@@ -1,15 +1,6 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/28
-------------------------------------------
-@Modify: 2022/08/28
-------------------------------------------
-@Description:
-"""
+
 import os
 
 from definitions import DATA_DIR, OUTPUT_DIR
@@ -30,12 +21,12 @@ if __name__ == '__main__':
     csv_path = os.path.join(DATA_DIR, 'query_data', 'APIMigrationBenchmark_method_{}.csv'.format(type))
     dataset = DataSet("method")
     dataset.load_from_csv(csv_path)
-    # 加载评估器
+
     filter_top_n = 10
     top_n = 10
     top_n_list = [1, 3, 5, 10]
     se = SimEvaluator(top_n)
-    # 加载migration pipeline
+
     milvus = DBUtil.get_milvus()
 
     if type == "big":

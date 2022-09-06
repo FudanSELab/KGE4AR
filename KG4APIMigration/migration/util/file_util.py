@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: Lenovo
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2021/12/15
-------------------------------------------
-@Modify: 2021/12/15
-------------------------------------------
-@Description:
-"""
 import json
 
 class FileUtil:
@@ -36,7 +26,7 @@ class FileUtil:
                     data_list.append(json.loads(line))
                 except BaseException as e:
                     print(e)
-                    print("这行出错", line)
+                    print("error", line)
                 line = file.readline()
         return data_list
 

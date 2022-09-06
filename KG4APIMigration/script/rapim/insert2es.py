@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/21
-------------------------------------------
-@Modify: 2022/08/21
-------------------------------------------
-@Description:
-"""
 import csv
 import os
 from elasticsearch import Elasticsearch

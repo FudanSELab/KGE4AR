@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: isky
-@Email: 19110240019@fudan.edu.cn
-@Created: 2019/10/28
-------------------------------------------
-@Modify: 2019/10/28
-------------------------------------------
-@Description:
-"""
 from typing import List
 
 import numpy as np
@@ -26,9 +16,7 @@ from migration.util.path_util import PathUtil
 
 
 class ComplExLinkPredictionMilvusSim(MilvusSim):
-    """
-    基于链接预测的方式，计算相似度
-    """
+
 
     MODE_START_NODE_AS_HEAD = 1
     MODE_START_NODE_AS_TAIL = 2
@@ -48,8 +36,8 @@ class ComplExLinkPredictionMilvusSim(MilvusSim):
         :param partition_name:
         :param start_node_mapper:
         :param end_node_mapper:
-        :param relation_embedding_path: 关系向量的加载地址
-        1. 直接用起始节点id的向量去找最相似的前N个，然后再注解计算mapper之后的相似度。
+        :param relation_embedding_path:
+
         """
         super().__init__(milvus_connection)
         self.partition_name = partition_name
@@ -85,7 +73,6 @@ class ComplExLinkPredictionMilvusSim(MilvusSim):
 
     def load_relation_embedding(self, r_file=PathUtil.complex_relation_file()):
         """
-        加载
         :param r_file:
         :return:
         """
@@ -127,7 +114,6 @@ class ComplExLinkPredictionMilvusSim(MilvusSim):
         return relation2numpy_map
 
     def batch_sim(self, start_api_id: int, top_n: int = 100) -> List[SimResult]:
-        # todo: 去掉实体本身
         map_start_node_vector = self.start_node_vector_mapper.map(start_api_id)
         if len(map_start_node_vector) == 0:
             return []
@@ -141,7 +127,6 @@ class ComplExLinkPredictionMilvusSim(MilvusSim):
 
     def matrix_sim(self, start_api_id_list: List[int], top_n: int = 500) -> List[List[SimResult]]:
         """
-        todo: 需要实现一下，提高效率，比如查向量可以批量
         :param start_api_id_list:
         :param top_n:
         :return:
@@ -183,7 +168,6 @@ class ComplExLinkPredictionMilvusSim(MilvusSim):
         map_start_node_vector = self.start_node_vector_mapper.map(start_api_id)
         if len(map_start_node_vector) == 0:
             return [SimResult(start_api_id, end_api_id, 0) for end_api_id in end_api_id_list]
-        # todo： 实现这个，其中可以批量获取end_api_id 对应的向量，并且可以批量计算一个向量和n个向量的距离
         results = [SimResult(start_id=start_api_id, end_id=end_id,
                              score=self.pair_sim(start_api_id=start_api_id, end_api_id=end_id))
                    for end_id in end_api_id_list]

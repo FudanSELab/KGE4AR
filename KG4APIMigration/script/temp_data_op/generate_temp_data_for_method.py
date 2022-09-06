@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/07/22
-------------------------------------------
-@Modify: 2022/07/22
-------------------------------------------
-@Description:
-"""
 import cProfile
 import os
 import threading
@@ -132,7 +122,6 @@ def merge(thread_num):
 
 if __name__ == '__main__':
     time1 = time.time()
-    # 加载数据
     # csv_path = os.path.join(DATA_DIR, 'query_data', 'APIMigrationBenchmark_method_{}.csv'.format(type))
     # dataset = DataSet("method")
     # dataset.load_from_csv(csv_path)
@@ -167,16 +156,16 @@ if __name__ == '__main__':
     ==============================================================================================================
     ==============================================================================================================
     '''
-    # 加载数据
+
     # csv_path = os.path.join(DATA_DIR, 'query_data', 'APIMigrationBenchmark_method_{}.csv'.format(type))
     # dataset = DataSet("method")
     # dataset.load_from_csv(csv_path)
-    # # 加载评估器
+
     # filter_top_n = 100
     # top_n = 100
     # top_n_list = [1, 3, 5, 10, 20, 30, 50, 100, 200]
     # se = SimEvaluator(top_n)
-    # # 加载migration pipeline
+
     # milvus = DBUtil.get_milvus()
     # eval_data_list = []
     #

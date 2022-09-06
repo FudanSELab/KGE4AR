@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: isky
-@Email: 19110240019@fudan.edu.cn
-@Created: 2019/10/28
-------------------------------------------
-@Modify: 2019/10/28
-------------------------------------------
-@Description:
-"""
 from typing import List
 from milvus import Milvus
 from migration.calculator.base import SimResult
@@ -21,11 +11,8 @@ from migration.util.neo4j_util import Neo4jUtil
 
 
 class EntityMappingMilvusSim(MilvusSim):
-    MAP_MODE_MAP_START_NODE_BEFORE_BATCH_SIM = 1  # 使用原始id映射前的向量去计算第一轮候选相似节点
-    MAP_MODE_MAP_START_NODE_AFTER_BATCH_SIM = 2  # 使用原始id映射后向量去计算第一轮候选相似节点
-    """
-    先基于起点计算批量相似度，确定可能相关的id节点，然后逐个计算pair sim。
-    """
+    MAP_MODE_MAP_START_NODE_BEFORE_BATCH_SIM = 1
+    MAP_MODE_MAP_START_NODE_AFTER_BATCH_SIM = 2
 
     def __init__(self, milvus_connection: Milvus,
                  collection_name: str = "migration_small_test",
@@ -41,7 +28,6 @@ class EntityMappingMilvusSim(MilvusSim):
         :param start_node2node_mapper:
         :param end_node2node_mapper:
         :param map_mode:
-        1. 直接用起始节点id的向量去找最相似的前N个，然后再注解计算mapper之后的相似度。
         """
         super().__init__(milvus_connection)
         self.partition_name = partition_name
@@ -77,7 +63,6 @@ class EntityMappingMilvusSim(MilvusSim):
 
     def matrix_sim(self, start_api_id_list: List[int], top_n: int = 500) -> List[List[SimResult]]:
         """
-        todo: 需要实现一下，提高效率，比如查向量可以批量
         :param start_api_id_list:
         :param top_n:
         :return:

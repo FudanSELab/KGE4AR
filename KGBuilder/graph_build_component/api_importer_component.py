@@ -18,9 +18,6 @@ from graph_build_component.html_extracter import HtmlExtractor
 
 # from component.spacy_model import spacy_model
 
-"""
-API知识图谱构建的主要功能实现类，通过创建api_importer_component类的实例可以将传入的JAVA源码解析结果构建成知识图谱。
-"""
 
 
 def search_field_id_dict(f_c_list, f_id):
@@ -290,7 +287,7 @@ class APIImporterComponent(Component):
             }
             node_id = self.import_normal_entity(api_entity_json)
             field_id_to_node_id[entity_info_row["id"]] = node_id
-            # 检查当前名字是否已经在graphdata中出现过,以此来添加type of 关系
+
             type_id = self.get_graph_node_by_qualified_name(type_name, class_name_to_node_id_map)
             if type_id is None and type_name not in primary_name_to_node_id_map.keys():
                 # print("ERROR: type Class is not in class_list", type_name)
@@ -310,13 +307,8 @@ class APIImporterComponent(Component):
         return field_id_to_node_id
 
     def import_entity_from_package_list(self):
-        """
-        从文件中读取所有的Package实体，添加到graphData当中
-        """
         print("start package node from list")
-        # 未成功数
         error_num_1 = 0
-        # 成功但重复数
         error_num_2 = 0
         entity_name_to_node_id_map = {}
         for entity_info_row in tqdm.tqdm(self.package_entity_list):
@@ -446,7 +438,6 @@ class APIImporterComponent(Component):
                     else:
                         error_num_2 += 1
 
-                    # 添加 return code directive 实体和关系
                     if "returnCodeDirective" in entity_info_row.keys():
                         if entity_info_row["returnCodeDirective"] != "":
                             count = 0
@@ -541,7 +532,6 @@ class APIImporterComponent(Component):
                         temp_r = [method_id, exception_id,
                                   CodeEntityRelationCategory.RELATION_CATEGORY_HAS_EXCEPTION_CONDITION]
                         relations.append(temp_r)
-                # 插入code directive
                 if "throwsCodeDirective" in dict(entity_info_row).keys():
                     if entity_info_row["throwsCodeDirective"] != "":
                         for row in entity_info_row["throwsCodeDirective"]:
@@ -592,9 +582,7 @@ class APIImporterComponent(Component):
         return node_id
 
     def add_primary_type(self, primary_type_name, **properties):
-        """
-        添加一些默认的基础数据类型
-        """
+
         properties[CodeConstant.QUALIFIED_NAME] = primary_type_name
 
         cate_labels = CodeEntityCategory.to_str_list(CodeEntityCategory.CATEGORY_PRIMARY_TYPE)
@@ -664,9 +652,7 @@ class APIImporterComponent(Component):
         print()
 
     def build_aliases(self):
-        """
-        为API添加别名信息
-        """
+
         self.code_element_kg_builder.build_aliases_for_code_element()
         self.graph_data.refresh_indexer()
 
@@ -685,9 +671,7 @@ class APIImporterComponent(Component):
         self.graph_data.save(g_path)
         self.doc_collection.save(d_path)
 
-    """
-    下面的方法属于文档生成
-    """
+
 
     def add_class_field(self, class_name_to_node_id_map):
         print("add class doc")
@@ -761,7 +745,7 @@ class APIImporterComponent(Component):
                                                          entity_row["returnValueDescription"])
                         right_num += 1
 
-                    # 添加code directive相关的文档
+
                     if "returnCodeDirective" in entity_row.keys():
                         if entity_row["returnCodeDirective"] != "":
                             count = 0
@@ -804,7 +788,7 @@ class APIImporterComponent(Component):
                                                                         exception_name_to_node_id_map)
                         self.add_field_in_doc_collection(node_id, throw_qualified_name[row["key"]], row["value"])
                         right_num += 1
-                    # 添加code directive相关的文档
+
                     if "throwsCodeDirective" in entity_row.keys():
                         for row in entity_row["throwsCodeDirective"]:
                             exception_code_directive_name = format_qualified_name + "." + row[
@@ -866,14 +850,8 @@ class APIImporterComponent(Component):
         print("end add field doc")
 
     def add_field_in_doc_collection(self, node_id, entity_full_qualified_name, full_html_description):
-        """
-        增加method相关的节点
-        :param node_id:
-        :param entity_full_qualified_name:
-        :param full_html_description:
-        :return:
-        """
-        # 迁移到 parser
+
+
         doc = MultiFieldDocument(id=node_id, name=entity_full_qualified_name)
         doc.add_field("full_html_description", full_html_description)
         doc.add_field("full_description", HtmlExtractor.html_remove(full_html_description))

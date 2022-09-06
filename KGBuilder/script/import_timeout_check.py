@@ -23,7 +23,7 @@ class ImportTimeoutCheck(threading.Thread):
     def run(self):
         try:
             self.result = self.csv_importer.run(self.graph_accessor, self.graph_data, self.KG_CSV_DIR, self.lib_name, self.index)
-        #     重复节点异常
+
         except ClientError:
             self.error = sys.exc_info()
         # self.result = self.csv_importer.run(self.graph_accessor, self.graph_data, self.KG_CSV_DIR, self.lib_name, self.index)

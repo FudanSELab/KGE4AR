@@ -314,13 +314,7 @@ class CSVGraphdataTranformer():
                       only_one_relation_file=True,
                       prefix=""
                       ):
-        '''
-        :param csv_folder: 存放生产csv文件的文件夹路径
-        :param graph: 将要导出的graphdata
-        :param csv_id: 生成的csv文件id列的列名，默认是id
-        :param csv_labels: 生成的csv文件labels列的列名，默认是labels
-        :return: 无返回
-        '''
+
         csvfilename2label = {}
         csvfilename2ids = {}
         csvfilename2property_name = {}
@@ -435,13 +429,7 @@ class CSVGraphdataTranformer():
 
     def node_csv2graphdata(self, file, graph: GraphData = None, csv_id=GraphData.DEFAULT_KEY_NODE_ID,
                            csv_labels=GraphData.DEFAULT_KEY_NODE_LABELS):
-        '''
-        :param file:  节点csv文件的全路径
-        :param graph: 将要导入csv的graph，将要导入的graphdata，没有传参则新建
-        :param csv_id: csv文件id所在列的列名，默认是id
-        :param csv_labels: csv文件labels所在列的列名，默认是labels
-        :return: 导入节点后的graphdata
-        '''
+
 
         if not graph:
             graph = GraphData()
@@ -483,14 +471,7 @@ class CSVGraphdataTranformer():
     def relation_csv2graphdata(self, file, graph=None, start_name=GraphData.DEFAULT_KEY_RELATION_START_ID,
                                relation_type_name=GraphData.DEFAULT_KEY_RELATION_TYPE,
                                end_name=GraphData.DEFAULT_KEY_RELATION_END_ID):
-        '''
-        :param file: 关系csv文件的全路径
-        :param graph: 将要导入的graphdata，没有传参则新建
-        :param start_name: csv文件关系开始点ID那一列的列名，默认是startId
-        :param relation_type_name: csv文件关系类型那一列的列名，默认是 relationType
-        :param end_name: csv文件关系结束点ID那一列的列列名，默认是endId
-        :return: 导入完成的graphdata
-        '''
+
         count = 0
         if not graph:
             return GraphData()

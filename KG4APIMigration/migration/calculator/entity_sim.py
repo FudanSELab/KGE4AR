@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: isky
-@Email: 19110240019@fudan.edu.cn
-@Created: 2019/10/28
-------------------------------------------
-@Modify: 2019/10/28
-------------------------------------------
-@Description:
-"""
 from typing import List
 from milvus import Milvus
 from migration.calculator.base import SimResult
@@ -47,12 +37,6 @@ class EntityMilvusSim(MilvusSim):
         return result
 
     def matrix_sim(self, start_api_id_list: List[int], top_n: int = 500) -> List[List[SimResult]]:
-        """
-        todo: 需要实现一下，提高效率，比如查向量可以批量
-        :param start_api_id_list:
-        :param top_n:
-        :return:
-        """
         return [self.batch_sim(start_api_id, top_n) for start_api_id in start_api_id_list]
 
     def pair_sim(self, start_api_id, end_api_id) -> SimResult:

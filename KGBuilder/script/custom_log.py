@@ -4,11 +4,11 @@ from definitions import LOG_FILE
 
 
 class LogUtil():
-    __log_util = None  # 单例模式标记
+    __log_util = None
 
     def __init__(self):
         self.logger = logging.getLogger("KGBuilder")
-        # 日志模式 w为写入前清空 a为追加
+
         ch = logging.FileHandler(LOG_FILE, mode='a')
         formats = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         ch.setFormatter(formats)

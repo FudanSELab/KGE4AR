@@ -1,15 +1,6 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/07
-------------------------------------------
-@Modify: 2022/08/07
-------------------------------------------
-@Description:
-"""
+
 import csv
 import os
 from functools import lru_cache

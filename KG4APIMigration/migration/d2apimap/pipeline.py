@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/08
-------------------------------------------
-@Modify: 2022/08/08
-------------------------------------------
-@Description:
-"""
 import numpy as np
 from elasticsearch import Elasticsearch
 from scipy.optimize import linear_sum_assignment

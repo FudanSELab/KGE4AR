@@ -1,15 +1,5 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
------------------------------------------
-@Author: zz
-@Email: 21212010059@m.fudan.edu.cn
-@Created: 2022/08/08
-------------------------------------------
-@Modify: 2022/08/08
-------------------------------------------
-@Description:
-"""
 from migration.rapim.model import TfIdfModel
 from migration.rapim.sentence_pipeline import SentencePipeline
 

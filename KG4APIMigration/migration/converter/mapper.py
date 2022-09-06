@@ -7,15 +7,15 @@ from migration.util.neo4j_util import Neo4jUtil
 
 
 class Node2NodeMapper:
-    # 对于给定的类和方法ID, 获取其
+
     SELF_MAP = 0
     METHOD_2_PARENT_CLASS = 1
     METHOD_2_PARENT_PACKAGE = 2
     METHOD_2_PARENT_LIBRARY = 3
     METHOD_2_RETURN_VALUE_TYPE = 4
     METHOD_2_RETURN_VALUE = 5
-    METHOD_2_PARENTS = 6  # 方法+方法的类+方法的包+方法的库
-    METHOD_2_NEIGHBOURS = 7  # 方法+方法的类+方法的返回值类型+方法的参数类型
+    METHOD_2_PARENTS = 6
+    METHOD_2_NEIGHBOURS = 7
     METHOD_2_NEIGHBOUR_WITH_CONCEPTS = 8
     METHOD_2_NEIGHBOUR_CONCEPTS = 9
     METHOD_2_PARAMETER_TYPES = 10

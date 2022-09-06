@@ -5,9 +5,6 @@ from kgdt.utils import SaveLoad
 
 
 class SimResult:
-    """
-    一对节点之间相似度的表示
-    """
 
     def __init__(self, start_id, end_id, score, extra=None):
         if extra is None:
@@ -40,9 +37,6 @@ class SimResult:
 
 
 class SimResultCollection:
-    """
-    一个节点和其他节点相似度的集合
-    """
 
     def __init__(self, start_id):
         self.start_id = start_id
@@ -81,9 +75,6 @@ class SimResultCollection:
 
 
 class CombineSimResultCollection(SaveLoad):
-    """
-    多个相似度结果的整合
-    """
 
     def __init__(self, start_id):
         self.start_id = start_id
@@ -168,9 +159,6 @@ class CombineSimResultCollection(SaveLoad):
 
 
 class MultiCombineSimResultCollection(SaveLoad):
-    """
-    多个API迁移的相似度结果的集合，即CombineSimResultCollection的集合
-    """
 
     def __init__(self):
         self.id2name2sim_collection = {}
