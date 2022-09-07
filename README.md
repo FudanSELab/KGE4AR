@@ -10,6 +10,7 @@ The code of our project is divided into two parts, the knowledge graph construct
 2. [QueryDataRelateLibrary](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/query_data/QueryDataRelateLibrary.csv), this is all the libraries involved in our migration of the dataset.
 
 ### Knowledge graph
+the version of our neo4j is v4.4.9. 
 1. [libraries.io](https://zenodo.org/record/3626071/files/libraries-1.6.0-2020-01-12.tar.gz), the download address of the original data set we built the knowledge graph.
 2. [BigKGData](https://zenodo.org/record/7052635/files/big_kg_data.7z?download=1), data directory of big knowledge graph.
 3. [BigKGEmbedding](todo), embedding directory of big knowledge graph, the tsv file is too big, we are now trying to upload it.
