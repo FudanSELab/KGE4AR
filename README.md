@@ -1,8 +1,8 @@
 # kge4am.github.io
 ## Our project
 The code of our project is divided into two parts, API KG construction and embedding and analogical API method inferring.
-1[APIKGConstructionAndEmbedding](https://github.com/kge4am/kge4am.github.io/blob/main/KGBuilder), the API KG construction code.
-2[AnalogicalAPIMethodInferring](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration), the analogical API method inferring code.
+1. [APIKGConstructionAndEmbedding](https://github.com/kge4am/kge4am.github.io/blob/main/KGBuilder), the API KG construction code.
+2. [AnalogicalAPIMethodInferring](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration), the analogical API method inferring code.
     
 ## Our data
 ### KGE4AM benchmark
