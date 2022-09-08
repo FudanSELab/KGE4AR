@@ -1,0 +1,16 @@
+gson/jackson-core
+gson/jackson-databind
+google-collections/guava-base
+google-collections/guava-collections
+json-simple/gson
+commons-httpclient/httpclient
+commons-lang/slf4j-api
+commons-logging/slf4j-api
+jsf-api/javax.faces
+jets3t/aws-java-sdk-s3
+json/gson
+slf4j-api/log4j
+testng/junit
+commons-io/guava-io
+commons-lang/guava-base
+mockito-all/jmock
