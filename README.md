@@ -24,21 +24,23 @@ the version of our neo4j is v4.4.9.
 ## Evaluate result
 ### RQ1: Effectiveness with Given Target Libraries
 Existing approaches for recommending analogical API methods only support the API mapping between two specific libraries. To compare with them more fairly, we also restrict KGE4AM to inferring analogical API methods with given target libraries. We compare KGE4AM with two document based baselines from previous work (i.e., RAPIM and D2APIMap) and a variant of KGE4AM (i.e., KGE4AM-Ret).
-1. [KGE4AM-Ret](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_retrieve_filter.json), performance on KGE4AM-Ret with given target libraries.
-2. [KGE4AM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_rerank_filter.json), performance on KGE4AM with given target libraries.
-3. [KGE4AMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_temp_data_for_method.py), the script of KGE4AM with given target libraries.
-4. [RAPIM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_rapim_filter.json), performance on RAPIM with given target libraries.
-5. [RAPIMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/rapim/generate_temp_data_for_rapim_method.py), the script of RAPIM with given target libraries.
-6. [D2APIMap](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_d2apimap_filter.json), performance on D2APIMap with given target libraries.
-7. [D2APIMapScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/d2apimap/generate_temp_data_for_d2apimap_method.py), the script of D2APIMap with given target libraries.
+1. [RelatedLibraries](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/query_data/KGE4AMBenchmarkRelatedLibraries.csv), related libraires.
+2. [KGE4AM-Ret](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_retrieve_filter.json), performance on KGE4AM-Ret with given target libraries.
+3. [KGE4AM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_apimigration_rerank_filter.json), performance on KGE4AM with given target libraries.
+4. [KGE4AMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/temp_data_op/generate_temp_data_for_method.py), the script of KGE4AM with given target libraries.
+5. [RAPIM](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_rapim_filter.json), performance on RAPIM with given target libraries.
+6. [RAPIMScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/rapim/generate_temp_data_for_rapim_method.py), the script of RAPIM with given target libraries.
+7. [D2APIMap](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/evaluate/big_d2apimap_filter.json), performance on D2APIMap with given target libraries.
+8. [D2APIMapScript](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/script/d2apimap/generate_temp_data_for_d2apimap_method.py), the script of D2APIMap with given target libraries.
 
 ### RQ2: Effectiveness without Given Target Libraries
 We compare KGE4AM with baselines on inferring analogical API methods for randomly selected API methods without given target libraries. The baselines used in RQ1 (i.e., RAPIM and D2APIMap) do not support inferring analogical API methods without given target libraries. To this end, we first create a simple baseline by using BM25. We implement the BM25 baseline by using Elasticsearch. Then, we combine BM25 with RAPIM and D2APIMap respectively to create two baselines BM25+RAPIM and BM25+D2APIMap. They use BM25 to obtain the top-n 100 results as candidates and then re-rank candidate based on RAPIM or D2APIMap. We set n to be 100, which is the same as the retrieval step in KGE4AM.
-1. [KGE4AMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_kge4am_method_10.json), sample data on KGE4AM without given target libraries.
-2. [BM25SampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_bm25_method_10.json), sample data on BM25 without given target libraries.
-3. [BM25+RAPIMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_rapim_method_10.json), sample data on BM25+RAPIM without given target libraries.
-4. [BM25+D2APIMapSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_d2apimap_method_10.json), sample data on BM25+D2APIMap without given target libraries.
-5. [SampleDataFinalMarkResult](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_final_mark.csv), mark result between KGE4AM and baselines without given target libraries. 
+1. [RelatedLibraries](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/query_data/KGE4AMSampleRelatedLibraries.csv), related libraires.
+2. [KGE4AMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_kge4am_method_10.json), sample data on KGE4AM without given target libraries.
+3. [BM25SampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_bm25_method_10.json), sample data on BM25 without given target libraries.
+4. [BM25+RAPIMSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_rapim_method_10.json), sample data on BM25+RAPIM without given target libraries.
+5. [BM25+D2APIMapSampleData](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_sample_d2apimap_method_10.json), sample data on BM25+D2APIMap without given target libraries.
+6. [SampleDataFinalMarkResult](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/output/mark_result/big_final_mark.csv), mark result between KGE4AM and baselines without given target libraries. 
 
 ### RQ3: Factor Impact
 We conduct some experiments to explore the impact of some key factors on KGE4AM, i.e., KG embedding models, knowledge types, and similarity types and weights. To conduct various factor-related experiments more conveniently, we construct a small-scale API KG whose input is the all libraries involved in the benchmark of RQ1, i.e., 16 libraries.
