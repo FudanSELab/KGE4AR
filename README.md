@@ -6,7 +6,7 @@ The code of our project is divided into two parts, API KG construction and embed
 
 ![schema of API KG](KG4APIMigration/data/example/example1.png)
 
-[the excel file about the schema of API KG.](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/example/example.xlsx)
+[the example file about the schema of API KG.](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/example/example.xlsx)
 
 ## Our data
 ### KGE4AM benchmark
