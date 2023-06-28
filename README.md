@@ -3,7 +3,12 @@
 The code of our project is divided into two parts, API KG construction and embedding and analogical API method inferring.
 1. [APIKGConstructionAndEmbedding](https://github.com/kge4am/kge4am.github.io/blob/main/KGBuilder), the API KG construction code.
 2. [AnalogicalAPIMethodInferring](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration), the analogical API method inferring code.
-    
+
+![image](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/example/example1.png)
+![image](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/example/example2.png)
+
+[the excel file about the image.](https://github.com/kge4am/kge4am.github.io/blob/main/KG4APIMigration/data/example/example.xlsx)
+
 ## Our data
 ### KGE4AM benchmark
 This benchmark contains 245 pairs of analogical API methods from 16 pairs of analogical libraries, covering different topics such as JSON processing, testing, logging, and network requests. Either
